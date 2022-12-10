@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <title>ПЛП-Партия любителей пива</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">.
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header>
+  <img src="images/logo.png" height="100" width="100" alt="page logo">
+  <h1 class="sus">Российская партия любителей пива</h1>
+  <nav class="sugus">
+    <ul>
+      <li><a href="index.html">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="history.html">История партии</a></li>
+      <li><a href="opros.html">Опрос населения</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <article>
+    <h2>ОПРОС</h2>
+    <p>Просим Вас принять участие в опросе, это не займет много времени</p>
+
+    <form>
+      <table>
+        <tr>
+          <td>
+            Любите ли Вы пиво?
+          </td>
+          <td>
+            <input type="radio" name="aboba" value="1">Да
+            <input type="radio" name="aboba"
+                   value="2">Нет
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Выберите Ваш любимый сорт пива:
+          </td>
+          <td>
+            <select id="selecttheme" >
+
+              <option value="1">Пилзнер</option>
+
+              <option value="2">Лагер</option>
+
+              <option value="3">Стаут</option>
+
+              <option value="4">Портер</option>
+
+              <option value="5">Корневое</option>
+
+              <option value="6">Фруктовое</option>
+
+              <option value="7">Пшеничное</option>
+
+              <option value="8">Индийский пейл-эль</option>
+
+              <option value="9">Амрериканский пейл-эль</option>
+            </select>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+          Введите имя
+          </td>
+          <td>
+            <p><input type="text" name="userName"  size="25" /></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Введите ваш возраст
+          </td>
+          <td>
+            <p><input type="text" name="userAge"size="25" /></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Сколько пиво пьете в месяц
+          </td>
+          <td>
+            <p><input type="text" name="userBeer" size="25" /></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Отправить"id="submit">
+          </td>
+          <td>
+            <input type="reset" value="Очистить">
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script>
+      document.querySelector("#submit").onclick = function(){
+        alert("Спасибо за участие в опросе");
+      }
+    </script>
+  </article>
+ 
+</main>
+
+<footer>
+  <p>All rights reserved, don't copy and republish</p>
+  <p>Created by iVanFromJapan</p>
+</footer>
+
+</body>
+</html>
